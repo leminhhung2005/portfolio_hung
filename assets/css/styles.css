@@ -725,3 +725,116 @@ a.read_more:hover {
     }
 
 }
+
+/* Thêm CSS cho phần Homework (theme light khớp với project hiện tại) */
+#homework {
+    background-color: #fff;
+    color: var(--second-color);
+    padding: 50px 20px;
+}
+
+.homework-title {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: var(--second-color);
+    text-align: center;
+    font-weight: var(--font-semi);
+}
+
+.tab-filters {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.tab-item {
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    color: var(--second-color);
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: all 0.3s;
+}
+
+.tab-item:hover {
+    background-color: #e9ecef;
+}
+
+.tab-item.active {
+    background-color: var(--first-color);
+    color: #fff;
+    border-color: var(--first-color);
+}
+
+.homework-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.homework-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
+    border: 1px solid #e9ecef;
+    transition: box-shadow 0.3s;
+}
+
+.homework-card:hover {
+    box-shadow: 0px 8px 35px rgba(14, 36, 49, 0.2);
+}
+
+.card-title {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    color: var(--second-color);
+    font-weight: var(--font-semi);
+}
+
+.card-subtitle {
+    color: #6c757d;
+    margin-bottom: 10px;
+    font-size: 0.9em;
+}
+
+.xem-btn {
+    background-color: var(--first-color);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: .5rem;
+    cursor: pointer;
+    align-self: flex-start;
+    font-weight: var(--font-semi);
+    transition: .3s;
+    font-size: var(--normal-font-size);
+}
+
+.xem-btn:hover {
+    box-shadow: 0px 10px 36px rgba(0, 0, 0, 0.15);
+}
+
+/* Media queries cho Homework */
+@media screen and (max-width: 768px) {
+    .tab-filters {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .homework-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .homework-title {
+        font-size: 2em;
+    }
+}
